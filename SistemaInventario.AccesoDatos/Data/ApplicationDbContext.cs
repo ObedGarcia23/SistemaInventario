@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SistemaInventario.Modelos;
 using SistemaInventario.Modelos.ViewModels;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -16,6 +17,7 @@ namespace SistemaInventario.AccesoDatos.Data
         }
 
         public DbSet<Bodega> Bodegas { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
 
